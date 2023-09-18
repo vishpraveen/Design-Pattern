@@ -1,18 +1,18 @@
 package creational.abstractfactory
 
 abstract class Company {
-    fun manufactureGPU():GPU {
+    fun manufactureGPU():Component {
         val gpu = createGPU()
         gpu.assemble()
         return gpu
     }
 
-    fun manufactureMonitor(): Monitor {
+    fun manufactureMonitor(): Component {
         val monitor = createMonitor()
-        monitor.assembleMonitor()
+        monitor.assemble()
         return monitor
     }
 
-    abstract fun createGPU(): GPU
-    abstract fun createMonitor(): Monitor
+    abstract fun createGPU(): Component
+    abstract fun createMonitor(): Component
 }
