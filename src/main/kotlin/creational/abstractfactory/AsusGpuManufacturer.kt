@@ -1,11 +1,11 @@
 package creational.abstractfactory
 
 class AsusGpuManufacturer: Company() {
-    override fun createGPU(): Component {
+    override fun createGPU(): GPU {
         return AsusGpu()
     }
 
-    override fun createMonitor(): Component {
+    override fun createMonitor(): Monitor {
         return AsusMonitor()
     }
 }

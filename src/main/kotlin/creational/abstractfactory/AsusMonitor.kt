@@ -1,7 +1,7 @@
 package creational.abstractfactory
 
-class AsusMonitor: Component {
-    override fun assemble(): Component {
+class AsusMonitor: Monitor {
+    override fun assembleMonitor(): Monitor {
         println("Monitor: ${this::class.simpleName}")
         return this
     }

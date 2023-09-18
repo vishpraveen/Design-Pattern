@@ -1,7 +1,7 @@
 package creational.abstractfactory
 
-class MsiGpu: Component {
-    override fun assemble(): Component {
+class MsiGpu: GPU {
+    override fun assemble(): GPU {
         println("GPU: ${this::class.simpleName}")
         return this
     }

@@ -1,11 +1,11 @@
 package creational.abstractfactory
 
 class MsiGpuManufacturer: Company() {
-    override fun createGPU(): Component {
+    override fun createGPU(): GPU {
         return MsiGpu()
     }
 
-    override fun createMonitor(): Component {
+    override fun createMonitor(): Monitor {
         return MsiMonitor()
     }
 }
